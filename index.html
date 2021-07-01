@@ -132,8 +132,11 @@
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>If you want private lessons make sure you just send me your credit card info and I might help you.</p>
-							<form method="post" action="#" netlify>
-								<div class="fields">
+							<form method="post" action="#" netlify-honeypot="bot-field" data-netlify="true">
+								<div class="fields"> 
+                  <div class="field" id="bot-field">
+                    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                  </div>
 									<div class="field">
 										<label for="name">Name</label>
 										<input type="text" name="name" id="name" />
